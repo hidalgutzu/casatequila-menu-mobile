@@ -1,5 +1,112 @@
-html, body {
+html, body, nav, ul, li, a {
     margin: 0;
     padding: 0;
 }
 
+body {
+    color: white;
+    background: black;
+    font-size: 16px;
+    height: 100%;
+}
+
+#main_menu { /*Menú general del sitio*/
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background: url('../images/bkgr-main-menu.png') no-repeat top center;
+    background-size: cover;
+}
+#main_menu .titulo {
+    margin-left: 55px;
+}
+#main_menu .titulo span {
+    font-family: 'Kurale', serif;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+#main_menu .titulo span::before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    margin-left: -40px;
+    top: 16px;
+    width: 29px;
+    height: 29px;
+    background: url('../images/icono-cubiertos.svg') no-repeat left center;
+}
+
+/* MENÚ de Alimentos, Bebidas, Postres */
+#menu_alimentos_bebidas {
+    background: url('../images/bkgr-platillos@2x.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+#menu_alimentos_bebidas .container {
+    height: 100vh;
+    display: flex;
+    vertical-align: middle;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#menu_opciones {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
+}
+#menu_opciones ul {
+    margin: 20px auto; 
+}
+#menu_opciones ul li {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+#menu_opciones ul li a {
+    width: 150px;
+    padding: 13px 0;
+    margin: 5px 0;
+    vertical-align: middle;
+    color: black;
+    background: white;
+    
+    text-decoration: none;
+}
+#menu_opciones ul li a:hover {
+    color: white;
+    background: black;
+}
+#menu_opciones::before, #menu_opciones::after {
+    content: ' ';
+    display: block;
+    margin: 0 auto;
+    width: 210px;
+    height: 20px;
+    background: url('../images/adorno-01.svg') no-repeat center center;
+}
+#menu_opciones::after {transform: rotate(180deg);}
+
+.borde {
+    border: 1px solid red;
+}
+
+.cocina_de_brasa {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    position: absolute;
+}
+
+.footer_menu_principal {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

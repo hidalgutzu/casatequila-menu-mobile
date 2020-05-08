@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Casa Tequila Cancún</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
 </head>
-<body id="menu-alimentos-bebidas">
+<body id="menu_alimentos_bebidas">
     <header id="main_menu">
-        <div id="titulo">
-            <p>Menú</p>
+        <div class="titulo">
+            <a href="#"><span>Menú</span></a>
         </div>
         <button id="btn_idioma">EN</button>
     </header>
-    <nav id="menu_opciones">
-        <ul>
-            <li><a href="">Botón</a></li>
-            <li><a href="">Botón</a></li>
-            <li><a href="">Botón</a></li>
-        </ul>
-    </nav>
-    <img src="assets/images/" alt="Cocina de Brasa en Cancún, México" class="cocina_de_brasa">
-    <footer class="footer_menu_principal">
-        <small>Restaurante Casa Tequila® Cancún Q. Roo, México</small>
-    </footer>
+    <div class="container">
+        <nav id="menu_opciones" class="borde">
+            <ul>
+                <li><a href="#">Alimentos</a></li>
+                <li><a href="#">Bebidas</a></li>
+                <li><a href="#">Postres</a></li>
+            </ul>
+        </nav>
+        <img class="cocina_de_brasa" src="assets/images/" alt="Cocina de Brasa en Cancún, México" />
+        <footer class="footer_menu_principal borde">
+            <small>Restaurante Casa Tequila® Cancún Q. Roo, México</small>
+        </footer>
+    </div>
 </body>
 </html>
