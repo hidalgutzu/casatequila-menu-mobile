@@ -11,16 +11,17 @@ body {
     height: 100%;
 }
 ::selection {
-    background: var(--amarillo);
-    color: black;
+    color: white;
+    background: var(--dedalo);
 }
 ::-moz-selection {
-    background: var(--amarillo);
-    color: black;
+    color: white;
+    background: var(--dedalo);
 }
 
 :root {
     --amarillo: #ffcc00;
+    --dedalo: #D2C29D;
     --blanco70: rgba(255,255,255,0.7);
     --trans: all 0.2s ease-in-out;
 }
