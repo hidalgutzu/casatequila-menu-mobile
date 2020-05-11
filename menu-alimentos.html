@@ -37,7 +37,7 @@
         <!-- /**/ -->
         <section class="container_platillos">
             <div class="platillo">
-                <img class="foto" src="./assets/images/temp_img.jpg" alt="Casa Tequila®"/>
+                <img id="myImg" class="foto" src="./assets/images/temp_img.jpg" alt="Guacamole"/>
                 <div class="contenido">
                     <div class="item_primario">
                         <h2>Guacamole</h2>
@@ -132,12 +132,24 @@
             </div>
             <!-- /**/ -->
             
-            <img src="./assets/images/adorno-02.svg" alt="Casa Tequila®"/>
+            <img class="adorno-divisor" src="./assets/images/adorno-02.svg" alt="Casa Tequila®"/>
             <small>Todos nuestros precios son en pesos mexicanos / IVA incluido</small>
         </section>
         <footer class="footer_menu">
             <small>Restaurante Casa Tequila® Cancún Q. Roo, México</small>
         </footer>
     </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+    
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+    
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
 </body>
+<script src="./assets/js/code.js"></script>
 </html>
