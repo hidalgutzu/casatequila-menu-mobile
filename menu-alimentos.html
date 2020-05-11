@@ -11,11 +11,11 @@
 <body id="menu_alimentos" class="menu_">
     <header id="main_menu">
         <div class="titulo">
-            <a href="#"><span>Menú</span></a>
+            <a href="./menu.html"><span>Menú</span></a>
         </div>
         <nav class="menu">
             <ul>
-                <li><a class="alimentos ocultar" href="#">Alimentos</a></li>
+                <li><a class="alimentos ocultar" href="./menu-alimentos.html">Alimentos</a></li>
                 <li><a class="bebidas" href="#">Bebidas</a></li>
                 <li><a class="postres" href="#">Postres</a></li>
                 <li><a class="idioma" href="#">En</a></li>
@@ -24,15 +24,17 @@
     </header>
     <div class="container">
         <div class="adornos">
-            <img src="./assets/images/adorno-esquina.svg" alt="Casa Tequila®"/>
+            <img class="item-1" src="./assets/images/adorno-esquina.svg" alt="Casa Tequila®"/>
             <h1>Menú de Alimentos</h1>
-            <img src="./assets/images/adorno-esquina.svg" alt="Casa Tequila®"/>
+            <img class="item-2" src="./assets/images/adorno-esquina.svg" alt="Casa Tequila®"/>
         </div>
         <select name="menualimentos" id="menualimentos">
             <option value="1">Entradas</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
+            <option value="2">Sopas</option>
+            <option value="3">Viva México</option>
+            <option value="4">Del Mar</option>
+            <option value="4">Especialidades Mayas</option>
+            <option value="4">Veganos</option>
         </select>
         <!-- /**/ -->
         <section class="container_platillos">
@@ -131,22 +133,85 @@
                 </div>
             </div>
             <!-- /**/ -->
+            <div class="platillo">
+                <img class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Casa Tequila®"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>Ceviche Casa Tequila</h2>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">196</span>
+                        </div>
+                        <p>(Pulpo, camarón, calamar y pescado)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /**/ -->
+            <div class="platillo">
+                <img class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Casa Tequila®"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>Ensalada Mexicana</h2>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">139</span>
+                        </div>
+                        <p>(Mezcla de lechugas, zanahoria, betabel, jícama, pepino, tomate, cebolla y aguacate)</p>
+                    </div>
+                    <div class="item_secundario">
+                        <p>Con pollo</p>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">189</span>
+                        </div>
+                    </div>
+                    <div class="item_secundario">
+                        <p>Con camarones</p>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">249</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /**/ -->
+            <div class="platillo">
+                <img class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Casa Tequila®"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>Escalopa de Atún</h2>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">165</span>
+                        </div>
+                        <p>(Finas rebanadas de lomo de atún marinado con aguachile y aceite de olivo, con pepino, cilantro y aguacate)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /**/ -->
             
             <img class="adorno-divisor" src="./assets/images/adorno-02.svg" alt="Casa Tequila®"/>
             <small>Todos nuestros precios son en pesos mexicanos / IVA incluido</small>
         </section>
         <footer class="footer_menu">
+            <figure>
+                <img src="./assets/images/restaurante-casa-tequila-logo@2x.png" alt="Restaurante Casa Tequila Cancún">
+                <img src="./assets/images/casa-tequila-desde-1992@2x.png" alt="Casa Tequila - desde 1992">
+            </figure>
             <small>Restaurante Casa Tequila® Cancún Q. Roo, México</small>
-        </footer>
+            <div class="adornos">
+                <img class="item-3" src="./assets/images/adorno-esquina.svg" alt="Casa Tequila®"/>
+                <img class="item-4" src="./assets/images/adorno-esquina.svg" alt="Casa Tequila®"/>
+            </div>
+        </footer>   
     </div>
+    
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <!-- The Close Button -->
         <span class="close">&times;</span>
-    
         <!-- Modal Content (The Image) -->
         <img class="modal-content" id="img01">
-    
         <!-- Modal Caption (Image Text) -->
         <div id="caption"></div>
     </div>

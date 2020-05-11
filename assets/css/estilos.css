@@ -246,6 +246,10 @@ footer {
     text-align: center;
     width: 100%;
 }
+.menu_ .adornos:nth-last-child(1) {
+    bottom: 50px;
+    padding: 0;
+}
 .menu_ .adornos img {
     position: absolute;
     height: 45px;
@@ -259,6 +263,13 @@ footer {
     right: 15px;
     transform: scaleX(-1);
 }
+.menu_ .adornos img.item-3, .menu_ .adornos img.item-4 {
+    transform: scaley(-1);
+}
+.menu_ .adornos img.item-4 {
+    transform: rotate(180deg);
+}
+
 .menu_ p {
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -278,6 +289,7 @@ footer {
 }
 .menu_ .foto {
     margin-right: 12px;
+    max-width: 100px;
 }
 .menu_ .sin_foto {
     width: 0;
@@ -293,7 +305,6 @@ footer {
     background-size: cover;
 }
 #menu_alimentos .container {
-    border: 5px solid red;
     display: grid;
     justify-items: flex-start;
     grid-template-rows: auto auto auto 1fr;
@@ -304,18 +315,28 @@ footer {
     height: 100vh;
 }
 #menualimentos {
-    border: 7px solid var(--blanco70);
-    background: brown;
+    border: 6px solid var(--blanco90);
+    background: url('../images/bkgr-main-menu.png') no-repeat top center;
+    color: white;
+    font-family: Kurale-Regular;
+    font-size: 1.1em;
+    background-size: cover;
     display: block;
-    height: 40px;
+    height: 50px;
     margin: 0 auto;
-    width: 90%;
+    width: 60%;
     text-align-last: center;
+    transition: var(--trans);
+    -webkit-box-shadow: -1px 10px 10px -3px rgba(0,0,0,0.22);
+    -moz-box-shadow: -1px 10px 10px -3px rgba(0,0,0,0.22);
+    box-shadow: -1px 10px 10px -3px rgba(0,0,0,0.22);
+}
+#menualimentos:hover {
+    border: 6px solid var(--amarillo);
 }
 
 /*------ ARQUITECTURA GRID MENÚ */
 .container_platillos {
-    border: 2px solid blue;
     display: grid;
     justify-items: center;
     padding: 0 15px;
@@ -344,7 +365,6 @@ footer {
     font-family: Kurale-Regular;
     font-size: 0.85em;
     color: var(--cafe);
-    opacity: 50%;
     letter-spacing: 0.3px;
     text-align: center;
     width: 100%;
@@ -353,6 +373,20 @@ footer {
     align-content: end; 
     justify-items: center;
     
+}
+.footer_menu small {
+    opacity: 50%;
+}
+.footer_menu figure img {
+    opacity: 50%;
+    margin: 0 5px;
+    width: 60px;
+}
+.footer_menu figure img:nth-last-child(1) {
+    width: 80px;
+}
+.footer_menu .adornos {
+    opacity: 100% !important;
 }
 
 /* MODAL IMAGES */
@@ -386,6 +420,7 @@ footer {
     display: block;
     width: 80%;
     max-width: 700px;
+    border-bottom: 5px solid var(--amarillo);
   }
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -442,8 +477,8 @@ footer {
     }
   }
 
+  /* display: grid;
 
-    /* display: grid;
     grid-template: 170px 1fr auto / 1fr 240px;
     grid-gap: 7px 20px;
     grid-template-areas: "formulario-container type-transfer" 
