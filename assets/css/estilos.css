@@ -128,8 +128,9 @@ footer {
     border:1px solid var(--amarillo);
     background: var(--amarillo);
 }
-
+/*-------------------------------------------*/
 /*------ MENÚ de Alimentos, Bebidas, Postres */
+/*-------------------------------------------*/
 #menu_alimentos_bebidas {
     background: linear-gradient(
         rgba(0,0,0, .1), 
@@ -231,6 +232,33 @@ footer {
     font-weight: 300;
     margin-left: 4px;
 }
+.menu_ h1 {
+    font-family: Kurale-Regular;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 22px;
+}
+.menu_ .adornos {
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.menu_ .adornos img {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    top: 7px;
+}
+.menu_ .adornos img:nth-child(1) {
+    left: 15px;
+}
+.menu_ .adornos img:nth-last-child(1) {
+    right: 15px;
+    transform: scaleX(-1);
+}
 .menu_ p {
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -262,8 +290,15 @@ footer {
     background-size: cover;
 }
 #menu_alimentos .container {
-    padding-top: 100px;
-    border: 4px solid blue;
+    border: 5px solid red;
+    display: grid;
+    justify-items: flex-start;
+    grid-template-rows: auto auto auto 1fr;
+    /* grid-template-areas: "adornos"
+                         "container_platillos" 
+                         ".";  */
+    padding-top: 65px;
+    height: 100vh;
 }
 #menualimentos {
     border: 7px solid var(--blanco70);
@@ -275,11 +310,16 @@ footer {
     text-align-last: center;
 }
 
-/*------ LISTADO MENÚ DE ALIMENTOS */
+/*------ ARQUITECTURA GRID MENÚ */
 .container_platillos {
+    border: 2px solid blue;
     display: grid;
     justify-items: center;
     padding: 0 15px;
+}
+.container_platillos small {
+    color: var(--vino);
+    padding: 10px 0 20px;
 }
 .container_platillos span {
     color: white;
@@ -294,6 +334,22 @@ footer {
 .platillo .contenido .item_primario, .platillo .contenido .item_secundario {
     display: grid;
     grid-template: auto / auto 45px;
+}
+
+/*------ FOOTER Menú */
+.footer_menu {
+    font-family: Kurale-Regular;
+    font-size: 0.85em;
+    color: var(--cafe);
+    opacity: 50%;
+    letter-spacing: 0.3px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 25px;
+    display: grid;
+    align-content: end; 
+    justify-items: center;
+    
 }
 
     /* display: grid;
