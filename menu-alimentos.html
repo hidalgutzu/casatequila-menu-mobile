@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Casa Tequila Cancún - Menú de Alimentos</title>
+    <title>ENTRADAS - Menú de Alimentos - ®Casa Tequila Cancún MX</title>
+    <meta name="description" content="Menú de alimentos del Restaurante Mexicano Casa Tequila Cancún"/>
+    <link rel=“canonical” href="http://casatequilacancun.com.mx/menu/alimentos/"/>
+    <meta name="keywords" content="restaurante casa tequila, menu de alimentos, comida mexicana, restaurante mexicano, los mejores restaurantes mexicanos, comida mexicana, restaurantes en cancún"/>
+    <meta name="author" content="hidalgutzu@gmail.com" />
+    <meta name="copyright" content="Casa Tequila Cancún ®" />
+    <meta name="robots" content="index,nofollow" />
     <link rel="stylesheet" href="assets/css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -11,14 +17,14 @@
 <body id="menu_alimentos" class="menu_">
     <header id="main_menu">
         <div class="titulo">
-            <a href="./menu.html"><span>Menú</span></a>
+            <a href="./index.html"><span>Menú</span></a>
         </div>
         <nav class="menu">
             <ul>
                 <li><a class="alimentos ocultar" href="./menu-alimentos.html">Alimentos</a></li>
-                <li><a class="bebidas" href="#">Bebidas</a></li>
-                <li><a class="postres" href="#">Postres</a></li>
-                <li><a class="idioma" href="#">En</a></li>
+                <li><a class="bebidas" href="./menu-bebidas.html">Bebidas</a></li>
+                <li><a class="postres" href="./menu-postres.html">Postres</a></li>
+                <li><a class="idioma" href="http//www.m.casatequilacancun.com/">En</a></li>
             </ul>
         </nav>
     </header>
@@ -28,13 +34,16 @@
             <h1>Menú de Alimentos</h1>
             <img class="item-2" src="./assets/images/adorno-esquina.svg" alt="Casa Tequila®"/>
         </div>
-        <select name="menualimentos" id="menualimentos">
-            <option value="1">Entradas</option>
-            <option value="2">Sopas</option>
-            <option value="3">Viva México</option>
-            <option value="4">Del Mar</option>
-            <option value="4">Especialidades Mayas</option>
-            <option value="4">Veganos</option>
+        <span class="lnr-chevron-down"></span>
+        <select onchange="location = this.value;" name="menualimentos" id="menualimentos" aria-invalid="false">
+            <option value="./menu-alimentos.html" selected> Entradas</option>
+            <option value="./menu-alimentos-sopas.html"> Sopas</option>
+            <option value="./menu-alimentos-vivamexico.html"> Viva México</option>
+            <option value="./menu-alimentos-delmar.html"> Del Mar</option>
+            <option value="./menu-alimentos-especialidades-mayas.html"> Especialidades Mayas</option>
+            <option value="./menu-alimentos-veganos.html"> Veganos</option>
+            <option value="./menu-alimentos-carnes-a-las-brasas.html"> Carnes a las Brasas</option>
+            <option value="./menu-alimentos-complementos.html"> Complementos</option>
         </select>
         <!-- /**/ -->
         <section class="container_platillos">

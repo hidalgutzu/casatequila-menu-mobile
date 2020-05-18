@@ -28,6 +28,8 @@ body {
     --vino: #671F0E;
     --cafe: #6E5A49;
     --dedalo: #D2C29D;
+    --blanco50: rgba(255,255,255,0.5);
+    --blanco60: rgba(255,255,255,0.6);
     --blanco70: rgba(255,255,255,0.7);
     --blanco80: rgba(255,255,255,0.8);
     --blanco90: rgba(255,255,255,0.9);
@@ -299,6 +301,34 @@ footer {
 .menu_ .adorno-divisor {
     margin-top: 20px;
 }
+
+/*Estilos generales del menú CARNE A LAS BRASAS*/
+#menu_alimentos.brasas {
+    background: linear-gradient(
+        rgba(0,0,0, .5), 
+        rgba(0,0,0, .5)), url('../images/bkgr-carbon.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.brasas #menualimentos {
+    color: black;
+    background: url('../images/lnr-chevron-down-negro.svg') no-repeat right,var(--amarillo) !important;
+}
+.menu_.brasas .platillo h2, .menu_.brasas h1, .menu_.brasas .platillo .signo, .menu_.brasas small { 
+    color: var(--amarillo);
+}
+.menu_.brasas .platillo p,
+.menu_.brasas .platillo span {
+    color: white;
+}
+.menu_.brasas .platillo {
+    border-bottom: 1px solid var(--blanco50);
+}
+.menu_.brasas .footer_menu small, .menu_.brasas .footer_menu figure img {
+    color: white;
+    opacity: 70%;
+}
+
 /*------ MENÚ SELECT Alimentos */
 #menu_alimentos {
     background: url('../images/bkgr-menu.jpg') no-repeat top center;
@@ -307,29 +337,44 @@ footer {
 #menu_alimentos .container {
     display: grid;
     justify-items: flex-start;
-    grid-template-rows: auto auto auto 1fr;
-    /* grid-template-areas: "adornos"
-                         "container_platillos" 
-                         ".";  */
+    grid-template-rows: auto auto auto auto 1fr;
     padding-top: 65px;
     height: 100vh;
 }
 #menualimentos {
+    box-sizing: content-box;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
     border: 6px solid var(--blanco90);
-    background: url('../images/bkgr-main-menu.png') no-repeat top center;
+    background: url('../images/lnr-chevron-down.svg'), url('../images/bkgr-main-menu.png') no-repeat right;
+    background-repeat: no-repeat;
+    background-position: right;
     color: white;
     font-family: Kurale-Regular;
     font-size: 1.1em;
-    background-size: cover;
     display: block;
     height: 50px;
+    padding-right: 10px;
+    right: -30px;
     margin: 0 auto;
-    width: 60%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 5px;
+    width: 65%;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
     text-align-last: center;
-    transition: var(--trans);
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+    text-indent: 5px;
     -webkit-box-shadow: -1px 10px 10px -3px rgba(0,0,0,0.22);
     -moz-box-shadow: -1px 10px 10px -3px rgba(0,0,0,0.22);
     box-shadow: -1px 10px 10px -3px rgba(0,0,0,0.22);
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    line-height: 1;
 }
 #menualimentos:hover {
     border: 6px solid var(--amarillo);
@@ -340,6 +385,7 @@ footer {
     display: grid;
     justify-items: center;
     padding: 0 15px;
+    width: 100%;
 }
 .container_platillos small {
     color: var(--vino);
@@ -359,6 +405,15 @@ footer {
     display: grid;
     grid-template: auto / auto 45px;
 }
+.platillo h2 {
+    position: relative;
+}
+.certangus {
+    position: absolute;
+    width: 33px;
+    top: -5px;
+    margin-left: 5px;
+}
 
 /*------ FOOTER Menú */
 .footer_menu {
@@ -371,8 +426,7 @@ footer {
     padding-bottom: 25px;
     display: grid;
     align-content: end; 
-    justify-items: center;
-    
+    justify-items: center;  
 }
 .footer_menu small {
     opacity: 50%;
