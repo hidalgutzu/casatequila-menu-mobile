@@ -220,6 +220,55 @@ footer {
     letter-spacing: 0.38px;
 }
 
+/* -------------------- */
+/* ENTRADAS */
+/* -------------------- */
+.entradas .guacamole {background: url('../images/alimentos/entradas/guacamole.jpg') no-repeat center center !important;}
+.entradas .nachos_arr {background: url('../images/alimentos/entradas/nachos-de-arrachera.jpg') no-repeat center center !important;}
+
+/* -------------------- */
+/* SOPAS */
+/* -------------------- */
+.sopas .sopa_tortilla {background: url('../images/alimentos/sopas/sopa-de-tortilla.jpg') no-repeat center center !important;}
+
+/* -------------------- */
+/* VIVA MÉXICO */
+/* -------------------- */
+.viva_mexico .burrito_pollo {background: url('../images/alimentos/viva-mexico/burrito-de-pollo.jpg') no-repeat center center !important;}
+.viva_mexico .enchiladas_mex {background: url('../images/alimentos/viva-mexico/enchiladas-mexicanas.jpg') no-repeat center center !important;}
+.viva_mexico .tacos_arr {background: url('../images/alimentos/viva-mexico/tacos-de-arrachera.jpg') no-repeat center center !important;}
+.viva_mexico .combo_mex {background: url('../images/alimentos/viva-mexico/combo-mexicano.jpg') no-repeat center center !important;}
+
+/* -------------------- */
+/* DEL MAR */
+/* -------------------- */
+.del_mar .camarones_coco {background: url('../images/alimentos/del-mar/camarones-al-coco.jpg') no-repeat center center !important;}
+.del_mar .salmon_cacahuate {background: url('../images/alimentos/del-mar/salmon-en-salsa-de-cacahuate.jpg') no-repeat center center !important;}
+
+/* -------------------- */
+/* ESPECIALIDADES MAYAS */
+/* -------------------- */
+.esp_mayas .poc_chuc {background: url('../images/alimentos/especialidades-mayas/poc-chuc.jpg') no-repeat center center !important;}
+.esp_mayas .queso_relleno {background: url('../images/alimentos/especialidades-mayas/queso-relleno.jpg') no-repeat center center !important;}
+
+/* -------------------- */
+/* VEGANOS */
+/* -------------------- */
+.veganos .fajitas {background: url('../images/alimentos/veganos/fajitas-veganas.jpg') no-repeat center center !important;}
+
+/* -------------------- */
+/* CARNES A LAS BRASAS */
+/* -------------------- */
+.carnes_brasas .rib_eye {background: url('../images/alimentos/carnes-a-las-brasas/rib-eye.jpg') no-repeat center center !important;}
+.carnes_brasas .salmon {background: url('../images/alimentos/carnes-a-las-brasas/salmon.jpg') no-repeat center center !important;}
+.carnes_brasas .pulpo {background: url('../images/alimentos/carnes-a-las-brasas/pulpo.jpg') no-repeat center center !important;}
+.carnes_brasas .parrillada_mex {background: url('../images/alimentos/carnes-a-las-brasas/parrillada-mexicana.jpg') no-repeat center center !important;}
+
+/* -------------------- */
+/* COMPLEMENTOS */
+/* -------------------- */
+.complementos .espinacas {background: url('../images/alimentos/complementos/espinacas-a-la-crema.jpg') no-repeat center center !important;}
+
 /*Estilos generales del menú alimentos-bebidas-postres*/
 .menu_ p, .menu_ .precios span {color: var(--vino);}
 .menu_ h2, .menu_ h2 span, .menu_ .precios .signo  {color: black;}
@@ -270,7 +319,6 @@ footer {
 .menu_ .adornos img.item-4 {
     transform: rotate(180deg);
 }
-
 .menu_ p {
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -290,8 +338,17 @@ footer {
 }
 .menu_ .foto {
     margin-right: 12px;
+    width: 100%;
     max-width: 100px;
+    height: 85px;
+    object-position: -99999px 99999px;
+    background-size: cover !important;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+.menu_ .foto:hover {opacity: 0.7;}
+
 .menu_ .sin_foto {
     width: 0;
     height: 0;
@@ -311,7 +368,10 @@ footer {
 }
 .brasas #menualimentos {
     color: black;
-    background: url('../images/lnr-chevron-down-negro.svg') no-repeat right,var(--amarillo) !important;
+    background: url('../images/lnr-chevron-down-negro.svg');
+    background-color: var(--amarillo);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .menu_.brasas .platillo h2, .menu_.brasas h1, .menu_.brasas .platillo .signo, .menu_.brasas small { 
     color: var(--amarillo);
@@ -323,6 +383,7 @@ footer {
 .menu_.brasas .platillo {
     border-bottom: 1px solid var(--blanco50);
 }
+.menu_.brasas .foto {border: 2px solid white}
 .menu_.brasas .footer_menu small, .menu_.brasas .footer_menu figure img {
     color: white;
     opacity: 70%;
@@ -338,7 +399,7 @@ footer {
     justify-items: flex-start;
     grid-template-rows: auto auto auto auto 1fr;
     padding-top: 65px;
-    height: 100vh;
+    height: 100%;
 }
 #menualimentos {
     position: sticky;
@@ -376,7 +437,7 @@ footer {
     overflow: hidden;
     overflow: -moz-hidden-unscrollable;
     line-height: 1;
-    z-index: 997;
+    z-index: 1;
 }
 #menualimentos:hover {
     border: 6px solid var(--amarillo);
@@ -445,16 +506,7 @@ footer {
     opacity: 100% !important;
 }
 
-/* MODAL IMAGES */
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  #myImg:hover {opacity: 0.7;}
-  
+/* MODAL IMAGES */  
   /* The Modal (background) */
   .modal {
     display: none; /* Hidden by default */
