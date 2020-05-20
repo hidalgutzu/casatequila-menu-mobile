@@ -28,6 +28,7 @@ body {
     --vino: #671F0E;
     --cafe: #6E5A49;
     --dedalo: #D2C29D;
+    --blanco40: rgba(255,255,255,0.4);
     --blanco50: rgba(255,255,255,0.5);
     --blanco60: rgba(255,255,255,0.6);
     --blanco70: rgba(255,255,255,0.7);
@@ -282,7 +283,7 @@ footer {
     font-weight: 300;
     margin-left: 4px;
 }
-.menu_ h1 {
+.menu_ h1, .menu_ .h1_ {
     font-family: Kurale-Regular;
     font-size: 22px;
     color: #000000;
@@ -290,6 +291,12 @@ footer {
     text-transform: uppercase;
     line-height: 22px;
 }
+.menu_ .h1_ {
+    color: white !important;
+    text-transform: inherit;
+}
+.menu_ .h1_:after {content: " ···";}
+.menu_ .h1_:before {content: "··· ";}
 .menu_ .adornos {
     padding: 20px 0;
     position: relative;
@@ -358,7 +365,7 @@ footer {
     margin-top: 20px;
 }
 
-/*Estilos generales del menú CARNE A LAS BRASAS*/
+/*Estilos generales del menú CARNE A LAS BRASAS --(h1, h2, p, span BEBIDAS)*/
 #menu_alimentos.brasas {
     background: linear-gradient(
         rgba(0,0,0, .5), 
@@ -373,18 +380,26 @@ footer {
     background-repeat: no-repeat;
     background-position: right;
 }
-.menu_.brasas .platillo h2, .menu_.brasas h1, .menu_.brasas .platillo .signo, .menu_.brasas small { 
+.menu_.brasas .platillo h2,
+.menu_.brasas h1, 
+.menu_.brasas .platillo .signo,
+.menu_.brasas small,
+.menu_.bebidas .platillo h2,
+.menu_.bebidas h1,
+.menu_.bebidas small { 
     color: var(--amarillo);
 }
 .menu_.brasas .platillo p,
-.menu_.brasas .platillo span {
+.menu_.brasas .platillo span,
+.menu_.bebidas .platillo p,
+.menu_.bebidas .platillo span {
     color: white;
 }
-.menu_.brasas .platillo {
-    border-bottom: 1px solid var(--blanco50);
+.menu_.brasas .platillo, .menu_.bebidas .platillo {
+    border-bottom: 1px solid var(--blanco40);
 }
 .menu_.brasas .foto {border: 2px solid white}
-.menu_.brasas .footer_menu small, .menu_.brasas .footer_menu figure img {
+.menu_.brasas .footer_menu small, .menu_.brasas .footer_menu figure img, .menu_.bebidas .footer_menu small {
     color: white;
     opacity: 70%;
 }
@@ -441,6 +456,15 @@ footer {
 }
 #menualimentos:hover {
     border: 6px solid var(--amarillo);
+}
+
+/*Estilos generales del menú BEBIDAS*/
+#menu_alimentos.bebidas {
+    background: linear-gradient(
+        rgba(0,0,0, .3), 
+        rgba(0,0,0, .3)), url('../images/bkgr-bebidas.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /*------ ARQUITECTURA GRID MENÚ */
