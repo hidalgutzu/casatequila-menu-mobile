@@ -10,11 +10,12 @@
     <meta name="author" content="hidalgutzu@gmail.com" />
     <meta name="copyright" content="Casa Tequila Cancún ®" />
     <meta name="robots" content="index,nofollow" />
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <!-- <link rel="stylesheet" href="assets/css/estilos.css"> -->
+    <link rel="stylesheet" href="assets/css/estilos.css?ver=1.1">
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body id="menu_alimentos" class="menu_ bebidas">
+<body id="menu_bebidas" class="menu_ bebidas">
     <header id="main_menu">
         <div class="titulo">
             <a href="./index.html"><span>Menú</span></a>
@@ -24,7 +25,7 @@
                 <li><a class="alimentos" href="./menu-alimentos.html">Alimentos</a></li>
                 <li><a class="bebidas ocultar" href="./menu-de-cervezas-artesanales.html">Bebidas</a></li>
                 <li><a class="postres" href="./menu-postres.html">Postres</a></li>
-                <li><a class="idioma" href="http//www.m.casatequilacancun.com/">En</a></li>
+                <li><a class="idioma" href="http://m.casatequilacancun.com/">En</a></li>
             </ul>
         </nav>
     </header>
@@ -49,16 +50,30 @@
             <option value="./menu-de-refrescos-y-aguas.html"> Refrescos y aguas</option>
         </select>
         <!-- /**/ -->
-        <section class="container_platillos vinos">
-            <br/><h1 class="h1_">Vino Tinto</h1>
+        <section class="container_platillos vinos doble_precio">
+            <div class="platillo container_precio_iconos">
+                <span></span>
+                <div class="precio_iconos">
+                    <div>
+                        <img src="./assets/images/icono-copa-vino.svg" alt="" class="item2 ico-copa-vino height60"/>
+                        <img src="./assets/images/icono-botella-vino.svg" alt="" class="item1 ico-botella-vino"/>
+                    </div>
+                </div>
+            </div>
+            <!-- /* VINO TINTO -------------------------------------- */ -->
+            <h1 class="h1_">Vino Tinto</h1>
             <div class="platillo">
                 <img id="myImg1" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Vino de la casa - Casa Tequila®" title="Vino de la casa"/>
                 <div class="contenido">
                     <div class="item_primario">
                         <h2>Vino de la casa</h2>
-                        <div class="precios">
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">80</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">290</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -71,99 +86,194 @@
                         <h2>Cabernet Sauvignon XA Domecq</h2>
                         <div class="precios">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">360</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /**/ -->
             <div class="platillo">
-                <img id="myImg3" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Petit shira la cetto - Casa Tequila®" title="Petit shira la cetto"/>
+                <img id="myImg3" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="La Cetto Cabernet Sauvignon - Casa Tequila®" title="La Cetto Cabernet Sauvignon"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Petit shira la cetto</h2>
+                        <h2>La Cetto Cabernet Sauvignon</h2>
                         <div class="precios">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">390</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /**/ -->
             <div class="platillo">
-                <img id="myImg4" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Chateau domecq - Casa Tequila®" title="Chateau domecq"/>
+                <img id="myImg4" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="La Cetto Merlot - Casa Tequila®" title="La Cetto Merlot"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Chateau domecq</h2>
+                        <h2>La Cetto Merlot</h2>
                         <div class="precios">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">390</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /**/ -->
             <div class="platillo">
-                <img id="myImg5" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Vino blanco - Casa Tequila®" title="Vino blanco"/>
+                <img id="myImg5" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="La Cetto Nebbiolo - Casa Tequila®" title="La Cetto Nebbiolo"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Vino blanco</h2>
+                        <h2>La Cetto Nebbiolo</h2>
                         <div class="precios">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">390</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /**/ -->
+            <div class="platillo">
+                <img id="myImg6" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Cuatro Soles Cabernet, Merlot y Malbec - Casa Tequila®" title="Cuatro Soles Cabernet, Merlot y Malbec"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>Cuatro Soles Cabernet, Merlot y Malbec</h2>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">450</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /**/ -->
+            <div class="platillo">
+                <img id="myImg7" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Santo Tomás Tempranillo Cabernet - Casa Tequila®" title="Santo Tomás Tempranillo Cabernet"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>Santo Tomás Tempranillo Cabernet</h2>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">940</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /**/ -->
+            <div class="platillo">
+                <img id="myImg8" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Monte Xanic Calixa Cabernet Syrah - Casa Tequila®" title="Monte Xanic Calixa Cabernet Syrah"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>Monte Xanic Calixa Cabernet Syrah</h2>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">999</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /* VINO BLANCO -------------------------------------- */ -->
             <br/><h1 class="h1_">Vino Blanco</h1>
             <div class="platillo">
-                <img id="myImg6" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Vino de la casa - Casa Tequila®" title="Vino de la casa"/>
+                <img id="myImg9" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Vino de la casa - Casa Tequila®" title="Vino de la casa"/>
                 <div class="contenido">
                     <div class="item_primario">
                         <h2>Vino de la casa</h2>
-                        <div class="precios">
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">80</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">290</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /**/ -->
             <div class="platillo">
-                <img id="myImg7" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Blanc De Blancs Domecq XA - Casa Tequila®" title="Blanc De Blancs Domecq XA"/>
+                <img id="myImg10" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Domecq Xa Blanc de Blancs - Casa Tequila®" title="Domecq Xa Blanc de Blancs"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Blanc De Blancs Domecq XA</h2>
+                        <h2>Domecq Xa Blanc de Blancs</h2>
                         <div class="precios">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">360</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /**/ -->
             <div class="platillo">
-                <img id="myImg8" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Chardonnay La Cetto - Casa Tequila®" title="Chardonnay La Cetto"/>
+                <img id="myImg11" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="La Cetto Chenin Blanc - Casa Tequila®" title="La Cetto Chenin Blanc"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Chardonnay La Cetto</h2>
+                        <h2>La Cetto Chenin Blanc</h2>
                         <div class="precios">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">380</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /**/ -->
             <div class="platillo">
-                <img id="myImg9" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Chateau Domecq - Casa Tequila®" title="Chateau Domecq"/>
+                <img id="myImg12" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="La Cetto Blanc de Zinfandel Rosado - Casa Tequila®" title="La Cetto Blanc de Zinfandel Rosado"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Chateau Domecq</h2>
+                        <h2>La Cetto Blanc de Zinfandel Rosado</h2>
                         <div class="precios">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">380</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /**/ -->
+            <div class="platillo">
+                <img id="myImg13" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="La Cetto Chardonnay - Casa Tequila®" title="La Cetto Chardonnay"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>La Cetto Chardonnay</h2>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">420</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /**/ -->
+            <div class="platillo">
+                <img id="myImg14" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Cuatro Soles Semidulce - Casa Tequila®" title="Cuatro Soles Semidulce"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>Cuatro Soles Semidulce</h2>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">340</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- /**/ -->
+             <div class="platillo">
+                <img id="myImg15" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Monte Xanic Chenin Colombard - Casa Tequila®" title="Monte Xanic Chenin Colombard"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>Monte Xanic Chenin Colombard</h2>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">855</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /**/ -->
+            <div class="platillo">
+                <img id="myImg16" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Monte Xanic Calixa Chardonnay - Casa Tequila®" title="Monte Xanic Calixa Chardonnay"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>Monte Xanic Calixa Chardonnay</h2>
+                        <div class="precios">
+                            <span class="signo">$</span>
+                            <span class="precio">855</span>
                         </div>
                     </div>
                 </div>

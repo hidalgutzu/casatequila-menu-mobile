@@ -10,11 +10,12 @@
     <meta name="author" content="hidalgutzu@gmail.com" />
     <meta name="copyright" content="Casa Tequila Cancún ®" />
     <meta name="robots" content="index,nofollow" />
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <!-- <link rel="stylesheet" href="assets/css/estilos.css"> -->
+    <link rel="stylesheet" href="assets/css/estilos.css?ver=1.1">
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body id="menu_alimentos" class="menu_ bebidas">
+<body id="menu_bebidas" class="menu_ bebidas">
     <header id="main_menu">
         <div class="titulo">
             <a href="./index.html"><span>Menú</span></a>
@@ -24,7 +25,7 @@
                 <li><a class="alimentos" href="./menu-alimentos.html">Alimentos</a></li>
                 <li><a class="bebidas ocultar" href="./menu-de-cervezas-artesanales.html">Bebidas</a></li>
                 <li><a class="postres" href="./menu-postres.html">Postres</a></li>
-                <li><a class="idioma" href="http//www.m.casatequilacancun.com/">En</a></li>
+                <li><a class="idioma" href="http://m.casatequilacancun.com/">En</a></li>
             </ul>
         </nav>
     </header>
@@ -49,29 +50,66 @@
             <option value="./menu-de-refrescos-y-aguas.html"> Refrescos y aguas</option>
         </select>
         <!-- /**/ -->
-        <section class="container_platillos margaritas">
+        <section class="container_platillos margaritas doble_precio">
+            <div class="platillo container_precio_iconos">
+                <span></span>
+                <div class="precio_iconos">
+                    <div>
+                        <img src="./assets/images/icono-margarita.svg" alt="" class="item1 ico-margarita height60"/>
+                        <img src="./assets/images/icono-margarita.svg" alt="" class="item2 ico-margarita"/>
+                    </div>
+                </div>
+            </div>
             <div class="platillo">
                 <img id="myImg1" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Margarita clásica - Casa Tequila®" title="Margarita clásica"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Clásica <span> Mango / Fresa / Tamarindo / Guayaba</span></h2>
-                        <div class="precios">
+                        <h2>Clásica</h2>
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">139</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">265</span>
+                            </div>
                         </div>
+                        <p>(Tequila reposado, controy, Limón y sal)</p>
                     </div>
                 </div>
             </div>
             <!-- /**/ -->
             <div class="platillo">
-                <img id="myImg2" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Margarita Verde/Azul - Casa Tequila®" title="Margarita Verde/Azul"/>
+                <img id="myImg1" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Margarita Golden - Casa Tequila®" title="Margarita Golden"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Verde o Azul<span></span></h2>
-                        <div class="precios">
+                        <h2>Golden</h2>
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">229</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">429</span>
+                            </div>
                         </div>
+                        <p>(Grand marnier, Tequila añejo, Limón y sal)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /**/ -->
+            <div class="platillo">
+                <img id="myImg2" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Margarita de sabores - Casa Tequila®" title="Margarita de sabores"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>De Sabores<span></span></h2>
+                        <div class="precios item1">
+                            <span class="signo">$</span>
+                            <span class="precio">145</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">275</span>
+                            </div>
+                        </div>
+                        <p>(Mango / fresa / tamarindo / maracuayá)</p>
                     </div>
                 </div>
             </div>
@@ -80,11 +118,16 @@
                 <img id="myImg2" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Margarita Tropical - Casa Tequila®" title="Margarita Tropical"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Tropical<span> Fresa / Guayaba</span></h2>
-                        <div class="precios">
+                        <h2>Tropical</h2>
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">145</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">275</span>
+                            </div>
                         </div>
+                        <p>(Fresa y guayaba)</p>
                     </div>
                 </div>
             </div>
@@ -93,23 +136,50 @@
                 <img id="myImg2" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Margarita Casa Tequila®" title="Margarita"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Casa Tequila<span> Guayaba / Mango / Fresa</span></h2>
-                        <div class="precios">
+                        <h2>Casa Tequila</h2>
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">145</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">275</span>
+                            </div>
                         </div>
+                        <p>(Guayaba, mango y fresa)</p>
                     </div>
                 </div>
             </div>
             <!-- /**/ -->
             <div class="platillo">
-                <img id="myImg2" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Margarita ORO - Casa Tequila®" title="Margarita ORO"/>
+                <img id="myImg2" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Margarita de Mezcal - Casa Tequila®" title="Margarita de Mezcal"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>ORO<span> Tequila 1800 / Grand Marnier</span></h2>
-                        <div class="precios">
+                        <h2>De Mezcal</h2>
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">145</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">275</span>
+                            </div>
+                        </div>
+                        <p>(Tamarindo o maracuya o guayaba)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /**/ -->
+            <div class="platillo">
+                <img id="myImg2" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Margarita Ancho Reyes Spicy - Casa Tequila®" title="Margarita Ancho Reyes Spicy"/>
+                <div class="contenido">
+                    <div class="item_primario">
+                        <h2>Ancho Reyes Spicy</h2>
+                        <div class="precios item1">
+                            <span class="signo">$</span>
+                            <span class="precio">159</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">299</span>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -10,11 +10,11 @@
     <meta name="author" content="hidalgutzu@gmail.com" />
     <meta name="copyright" content="Casa Tequila Cancún ®" />
     <meta name="robots" content="index,nofollow" />
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/estilos.css?ver=1.2">
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body id="menu_alimentos" class="menu_ bebidas">
+<body id="menu_bebidas" class="menu_ bebidas">
     <header id="main_menu">
         <div class="titulo">
             <a href="./index.html"><span>Menú</span></a>
@@ -24,7 +24,7 @@
                 <li><a class="alimentos" href="./menu-alimentos.html">Alimentos</a></li>
                 <li><a class="bebidas ocultar" href="./menu-de-cervezas-artesanales.html">Bebidas</a></li>
                 <li><a class="postres" href="./menu-postres.html">Postres</a></li>
-                <li><a class="idioma" href="http//www.m.casatequilacancun.com/">En</a></li>
+                <li><a class="idioma" href="http://m.casatequilacancun.com/">En</a></li>
             </ul>
         </nav>
     </header>
@@ -49,87 +49,108 @@
             <option value="./menu-de-refrescos-y-aguas.html"> Refrescos y aguas</option>
         </select>
         <!-- /**/ -->
-        <section class="container_platillos cervezas">
+        <section class="container_platillos cervezas doble_precio">
+            <div class="platillo container_precio_iconos">
+                <span></span>
+                <div class="precio_iconos">
+                    <div>
+                        <img src="./assets/images/icono-beer-bottle.svg" alt="" class="item1 ico-beer-bottle"/>
+                        <img src="./assets/images/icono-beer.svg" alt="" class="item2 ico-beer"/>
+                    </div>
+                </div>
+            </div>
             <div class="platillo">
-                <img id="myImg1" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Cerveza Corona / Corona Light - Casa Tequila®" title="Cerveza Corona y Corona Light"/>
+                <img id="myImg1" class="foto corona" src="./assets/images/bebidas/cervezas/corona.png" alt="Cerveza Corona / Corona Light - Casa Tequila®" title="Cerveza Corona y Corona Light"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Corona / Corona Light<span></span></h2>
-                        <div class="precios">
+                        <h2>Corona</h2>
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">62</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">115</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="platillo">
-                <img id="myImg3" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Cerveza Victoria - Casa Tequila®" title="Cerveza Victoria"/>
+                <img id="myImg2" class="foto xx_lager_ambar" src="./assets/images/bebidas/cervezas/xx-lager-ambar.png" alt="Cerveza XX Lager / XX Ambar - Casa Tequila®" title="Cerveza XX Lager / XX Ambar"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Victoria <span></span></h2>
-                        <div class="precios">
+                        <h2>XX Lager / XX Ambar</h2>
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">62</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">115</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="platillo">
-                <img id="myImg4" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Cerveza Pacífico - Casa Tequila®" title="Cerveza Pacífico"/>
+                <img id="myImg3" class="foto bohemia" src="./assets/images/bebidas/cervezas/bohemia-clara-oscura.png" alt="Cerveza Bohemia clásica / oscura - Casa Tequila®" title="Cerveza Bohemia clásica / oscura"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Pacífico <span></span></h2>
-                        <div class="precios">
+                        <h2>Bohemia clásica / oscura</h2>
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">65</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">120</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="platillo">
-                <img id="myImg5" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Cerveza Modelo Especial - Casa Tequila®" title="Cerveza Modelo Especial"/>
+                <img id="myImg4" class="foto tecate" src="./assets/images/bebidas/cervezas/tecate.png" alt="Cerveza Tecate / Tecate Light - Casa Tequila®" title="Cerveza Tecate / Tecate Light"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Modelo Especial <span></span></h2>
-                        <div class="precios">
+                        <h2>Tecate / Tecate Light</h2>
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">62</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">115</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="platillo">
-                <img id="myImg6" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Cerveza Negra Modelo - Casa Tequila®" title="Cerveza Negra Modelo"/>
+                <img id="myImg5" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Vaso chelado / michelado - Casa Tequila®" title="Vaso chelado / michelado"/>
                 <div class="contenido">
                     <div class="item_primario">
-                        <h2>Negra Modelo <span></span></h2>
-                        <div class="precios">
+                        <h2>Vaso chelado / michelado</h2>
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">22</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">40</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="platillo">
-                <img id="myImg7" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Vaso Michelado - Casa Tequila®" title="Vaso Michelado"/>
-                <div class="contenido">
-                    <div class="item_primario">
-                        <h2>Vaso Michelado</h2>
-                        <div class="precios">
-                            <span class="signo">$</span>
-                            <span class="precio">#</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="platillo">
-                <img id="myImg8" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Ojo Rojo - Casa Tequila®" title="Ojo Rojo"/>
+                <img id="myImg6" class="foto sin_foto" src="./assets/images/temp_img.jpg" alt="Ojo Rojo - Casa Tequila®" title="Ojo Rojo"/>
                 <div class="contenido">
                     <div class="item_primario">
                         <h2>Ojo Rojo</h2>
-                        <div class="precios">
+                        <div class="precios item1">
                             <span class="signo">$</span>
-                            <span class="precio">#</span>
+                            <span class="precio">40</span>
+                            <div class="precios item2">
+                                <span class="signo">$</span>
+                                <span class="precio">70</span>
+                            </div>
                         </div>
                     </div>
                 </div>
