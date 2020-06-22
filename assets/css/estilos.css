@@ -242,12 +242,13 @@ footer {
 /* -------------------- */
 .sopas .sopa_tortilla {background: url('../images/alimentos/sopas/sopa-de-tortilla.jpg') no-repeat center center !important;}
 .sopas .sopa_mariscos {background: url('../images/alimentos/sopas/sopa-de-mariscos.jpg') no-repeat center center !important;}
+.sopas .sopa_lima {background: url('../images/alimentos/sopas/sopa-de-lima.jpg') no-repeat center center !important;}
 
 /* -------------------- */
 /* VIVA MÉXICO */
 /* -------------------- */
 .viva_mexico .burrito_pollo {background: url('../images/alimentos/viva-mexico/burrito-de-pollo.jpg') no-repeat center center !important;}
-.viva_mexico .enchiladas_mex {background: url('../images/alimentos/viva-mexico/enchiladas-mexicanas.jpg') no-repeat center center !important;}
+.viva_mexico .enchiladas_mex {background: url('../images/alimentos/viva-mexico/enchiladas-suizas.jpg') no-repeat center center !important;}
 .viva_mexico .tacos_arr {background: url('../images/alimentos/viva-mexico/tacos-de-arrachera.jpg') no-repeat center center !important;}
 .viva_mexico .combo_mex {background: url('../images/alimentos/viva-mexico/combo-mexicano.jpg') no-repeat center center !important;}
 .viva_mexico .fajitas_mar_tierra {background: url('../images/alimentos/viva-mexico/fajitas-mar-y-tierra.jpg') no-repeat center center !important;}
@@ -336,7 +337,7 @@ footer {
 .bebidas .minerva_pale_ale {background: url('../images/bebidas/cervezas-artesanales/minerva-pale-ale.png') no-repeat center center !important;}
 .bebidas .minerva_stout_imperial {background: url('../images/bebidas/cervezas-artesanales/minerva-stout-imperial.png') no-repeat center center !important;}
 .bebidas .minerva_imperial_tequila {background: url('../images/bebidas/cervezas-artesanales/minerva-imperial-tequila-ale.png') no-repeat center center !important;}
-.bebidas .perro_del_mal {background: url('../images/bebidas/cervezas-artesanales/perro-del-mal.png') no-repeat center center !important;}
+.bebidas .perro_del_mar {background: url('../images/bebidas/cervezas-artesanales/perro-del-mar.png') no-repeat center center !important;}
 .bebidas .tulum {background: url('../images/bebidas/cervezas-artesanales/tulum.png') no-repeat center center !important;}
 
 /* cervezas */
