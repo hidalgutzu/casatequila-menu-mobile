@@ -70,12 +70,12 @@ footer {
 #main_menu .titulo {
     margin-left: 55px;
 }
-#main_menu .titulo span {
+#main_menu .titulo .menu-ico {
     font-size: 1.3em;
     text-transform: uppercase;
     transition: var(--trans);
 }
-#main_menu .titulo span::before {
+#main_menu .titulo .menu-ico::before {
     content: ' ';
     position: absolute;
     display: inline-block;
@@ -89,13 +89,48 @@ footer {
 #main_menu .titulo a {
     color: white;
     text-decoration: none;
+    /* padding: 10px; */
 }
-#main_menu .titulo span:hover::before {
+#main_menu .titulo .menu-ico:hover::before {
     background: url('../images/icono-cubiertos-hover.svg') no-repeat left center;
 }
-#main_menu .titulo a span:hover {
+#main_menu .titulo a .menu-ico:hover {
     color: var(--amarillo); 
 }
+
+/* MENÚ ICONOS (menú - tripadvisor) */
+#main_menu .titulo-interna {
+    display: flex;
+}
+#main_menu .titulo-interna li {
+    text-decoration: none;
+    list-style: none;
+}
+#main_menu .titulo-interna li a {
+    padding: 13px 24px;
+}
+#main_menu .titulo-interna li .menu-ico {
+    background: url('../images/icono-cubiertos.svg') no-repeat center center !important;
+    background-size: 29px !important;
+    transition: var(--trans);
+}
+#main_menu .titulo-interna li .menu-ico:hover {
+    background: url('../images/icono-cubiertos-hover.svg') no-repeat center center !important;
+    background-size: 29px !important;
+    transition: var(--trans);
+}
+#main_menu .titulo-interna li .tripadvisor-ico {
+    background: url('../images/icono-tripadvisor-1.svg')no-repeat center center !important;
+    background-size: 29px !important;
+    transition: var(--trans);
+}
+#main_menu .titulo-interna li .tripadvisor-ico:hover {
+    background: url('../images/icono-tripadvisor-hover.svg')no-repeat center center !important;
+    background-size: 29px !important;
+    transition: var(--trans);
+}
+
+/* MENÚ HOME */
 #main_menu .alimentos, #main_menu  .bebidas, #main_menu  .postres {
     transition: var(--trans);
     border-right: 1px solid rgba(255,255,255,0.4);
@@ -130,33 +165,32 @@ footer {
     border:1px solid var(--amarillo);
     background: var(--amarillo);
 }
+
 /*-------------------------------------------*/
 /*------ MENÚ de Alimentos, Bebidas, Postres */
 /*-------------------------------------------*/
 #menu_alimentos_bebidas {
     background: linear-gradient(
-        rgba(0,0,0, .1), 
-        rgba(0,0,0, .7)),
+        rgba(0,0,0, .2), 
+        rgba(0,0,0, .8)),
         url('../images/bkgr-platillos@2x.jpg') no-repeat top center;
         background-size: cover;
     }
     
 #menu_alimentos_bebidas .container {
     height: 100vh;
-    display: flex;
-    vertical-align: middle;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
 }
 #menu_opciones {
-    height: 90vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     vertical-align: middle;
     justify-content: center;
 }
 #menu_opciones ul {
-    margin: 20px auto; 
+    margin: 10px auto; 
 }
 #menu_opciones ul li {
     display: flex;
@@ -186,6 +220,45 @@ footer {
     background: url('../images/adorno-01.svg') no-repeat center center;
 }
 #menu_opciones::after {transform: rotate(180deg);}
+
+#menu_secundario {
+    margin: 0 auto 10px auto !important;
+    z-index: 101;
+}
+#menu_secundario li a .tripadvisor, #menu_secundario li a .evaluanos {
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+    transition: var(--trans);
+}
+#menu_secundario li a .tripadvisor {
+    background: url('../images/icono-tripadvisor-1.svg')no-repeat center center !important;
+    background-size: contain !important;
+}
+#menu_secundario li a:hover .tripadvisor {
+    background: url('../images/icono-tripadvisor-hover.svg')no-repeat center center !important;
+    background-size: contain !important;
+}
+#menu_secundario li a .evaluanos {
+    background: url('../images/icono-smile.svg')no-repeat center center;
+    background-size: contain;
+}
+#menu_secundario li a:hover .evaluanos {
+    background: url('../images/icono-smile-hover.svg')no-repeat center center;
+    background-size: contain;
+}
+#menu_secundario li a {
+    color: white !important;
+    background: none !important;
+    border: 1px solid white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu_secundario li a:hover {
+    color: var(--amarillo) !important;
+    border:1px solid var(--amarillo) !important;
+}
 
 .cocina_de_brasa {
     position: relative;
