@@ -129,6 +129,16 @@ footer {
     background-size: 29px !important;
     transition: var(--trans);
 }
+#main_menu .titulo-interna li .smile-ico {
+    background: url('../images/icono-smile.svg')no-repeat center center !important;
+    background-size: 25px !important;
+    transition: var(--trans);
+}
+#main_menu .titulo-interna li .smile-ico:hover {
+    background: url('../images/icono-smile-hover.svg')no-repeat center center !important;
+    background-size: 25px !important;
+    transition: var(--trans);
+}
 
 /* MENÚ HOME */
 #main_menu .alimentos, #main_menu  .bebidas, #main_menu  .postres {
@@ -225,6 +235,11 @@ footer {
     margin: 0 auto 10px auto !important;
     z-index: 101;
 }
+
+#menu_secundario li a {
+    padding: 8px 0 !important;
+}
+
 #menu_secundario li a .tripadvisor, #menu_secundario li a .evaluanos {
     width: 25px;
     height: 25px;
@@ -242,6 +257,7 @@ footer {
 #menu_secundario li a .evaluanos {
     background: url('../images/icono-smile.svg')no-repeat center center;
     background-size: contain;
+    width: 21px;
 }
 #menu_secundario li a:hover .evaluanos {
     background: url('../images/icono-smile-hover.svg')no-repeat center center;
